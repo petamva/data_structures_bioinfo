@@ -10,3 +10,5 @@ The following (na grapsw to 8ema ths ergasias edw)
 (na grapsw tis odhgies egkatastashs/ treksimatos edw )
 
 exercise_michail
+
+[Markdown basic syntax](https://www.markdownguide.org/basic-syntax/)
