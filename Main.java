@@ -1,4 +1,3 @@
-//package com.company;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,8 +22,7 @@ public class Main {
         ArrayList<Pair> pairs = new ArrayList<>();//create array that will store user pairs
         ArrayList<Pair> reversePairs = new ArrayList<>();//create array that will store user pairs in reverse order
         try {
-            //File myObj = new File("C:/Users/redi/Desktop/ergasia/Wiki-Vote.txt");
-            File myObj = new File(args[0]);
+	    File myObj = new File(args[0]);
             Scanner myReader = new Scanner(myObj); // create scanner obj to grab .txt file
 
             while (myReader.hasNextLine()) {
@@ -96,7 +94,6 @@ public class Main {
             } else
                 System.out.println("Users not connected");
             System.out.println("Search time was: " + (endTime1 - startTime1) + " milliseconds");
-//            breadthFirstSearch(reverseVertices,reverseEdges,users[1],users[0]);
 
             System.out.println("\nBidirectional BFS results: ");
             long startTime2 = System.currentTimeMillis();
@@ -147,7 +144,7 @@ public class Main {
         for (int i = 0; i <= max; i++) { // vertices size must be equal to max user either in pairs or edges!!!
             for (int j = 0; j < pairs.size(); j++)
                 if (pairs.get(j).getStartNode() == i) {
-                    cnt++;
+                    j = cnt++;
                 }
             vertices.add(cnt);
         }
